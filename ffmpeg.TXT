@@ -1,1 +1,0 @@
-ffmpeg -i pigs/2.mp4 -r 1 -q:v 1 -qmin 1 -qmax 1 -vf "select=not(mod(n\,10))" -vsync vfr dat/%03d.jpg
